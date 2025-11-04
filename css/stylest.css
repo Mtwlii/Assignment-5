@@ -21,9 +21,11 @@
 } */
 
 .sidebar {
-    height: auto;
-    grid-column: 1 /3;
-    grid-row: 1 / -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 15%;
     padding-right: 10px;
     margin-left: 40px;
     background-color: white;
@@ -83,7 +85,10 @@
     display: flex;
     margin: auto;
     padding: 10px;
-
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 ul {
@@ -99,6 +104,86 @@ li {
 
 button {
     cursor: pointer;
+}
+
+.end-sec-sid {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.end-sec-sid span {
+    padding-top: 8px;
+}
+
+.end-sec-sid button {
+    background-color: unset;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.end-sec-sid button:first-child img {
+    width: 40px;
+    display: flex;
+    margin-left: 1rem;
+    background-color: #dbe8fc;
+    padding: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.end-sec-sid button:nth-child(2) img {
+    width: 35px;
+    display: flex;
+    margin-left: 1rem;
+    background-color: #d5f3e1;
+    border-radius: 8px;
+    padding: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.end-sec-sid button:nth-child(3) img {
+    width: 35px;
+    display: flex;
+    margin-left: 1rem;
+    background-color: #efe0fc;
+    border-radius: 8px;
+    padding: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.end-sec-sid button:nth-child(4) img {
+    width: 35px;
+    display: flex;
+    margin-left: 1rem;
+    background-color: #fce5d5;
+    border-radius: 8px;
+    padding: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.end-sec-sid button:hover {
+    background-color: #fafafa;
 }
 
 .main-spn {
@@ -119,6 +204,119 @@ button {
 
 .container {
     width: 100%;
+    margin: auto;
+}
+
+.sec2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.sec2 .item-1 {
+    background-color: #ffffff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: calc(96%/3);
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.sec2 .item-1 p:first-child {
+    font-size: small;
+    color: #5F6978;
+}
+
+.sec2 .item-1 p:nth-child(2) {
+    font-size: xx-large;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.sec2 .item-1>div img {
+    width: 1rem;
+    rotate: 180deg;
+}
+
+.sec2 .item-1>div span {
+    color: #00a63e;
+    font-weight: 500;
+}
+
+.sec2 .item-2 {
+    background-color: #ffffff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: calc(96%/3);
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.sec2 .item-2 p:first-child {
+    font-size: small;
+    color: #5F6978;
+}
+
+.sec2 .item-2 p:nth-child(2) {
+    font-size: xx-large;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.sec2 .item-2>div img {
+    width: 1rem;
+    rotate: 180deg;
+}
+
+.sec2 .item-2>div span {
+    color: #00a63e;
+    font-weight: 500;
+}
+
+.sec2 .item-3 {
+    background-color: #ffffff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: calc(96%/3);
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.sec2 .item-3 p:first-child {
+    font-size: small;
+    color: #5F6978;
+}
+
+.sec2 .item-3 p:nth-child(2) {
+    font-size: xx-large;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.sec2 .item-3>div img {
+    width: 1rem;
+    background-color: #eb000b;
+}
+
+.sec2 .item-3>div span {
+    color: #eb000b;
+    font-weight: 500;
 }
 
 .header {
